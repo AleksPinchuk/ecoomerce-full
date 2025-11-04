@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ecommerce-full
+    env: node
+    plan: free
+    buildCommand: cd ecommerce-backend && npm install && cd ../ecommerce && npm install && npm run build && mv dist ../ecommerce-backend
+    startCommand: cd ecommerce-backend && npm start
+    envVars:
+      NODE_VERSION: 20.15.1
