@@ -28,5 +28,8 @@
     "archiver": "^7.0.1",
     "eslint": "^8.0.0",
     "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": "25.x"
   }
 }
